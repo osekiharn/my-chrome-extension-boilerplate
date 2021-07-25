@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "my-chrome-extension-boilerplate",
+    "description": "my awesome chrome extension boilerplate",
+    "version": "1.0.0",
+    "action": {
+        "default_title": "defaut_title"
+    },
+    "background": {
+        "service_worker": "background.bundle.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "contentScript.bundle.js"
+            ]
+        }
+    ],
+    "permissions": ["tabs"],
+    "host_permissions": [
+        "*://*/*"
+    ]
+}
+

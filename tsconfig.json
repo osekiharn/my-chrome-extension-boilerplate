@@ -1,0 +1,10 @@
+{
+    "compilerOption": {
+        "target": "ES5",
+        "module": "commonjs",
+        "sourceMap": true,
+        "removeComments": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true
+    }
+}
